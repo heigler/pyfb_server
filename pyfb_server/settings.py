@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Just a settings file
+import os
+
+BASE_PATH = os.path.abspath(os.path.dirname(__file__)) 
 
 SERVER_PORT = 8600
 
