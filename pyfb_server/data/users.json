@@ -1,0 +1,56 @@
+{
+    "user1": {
+        "id": "100000000000001",
+        "name": "Arnold Schwarzenegger",
+        "first_name": "Arnold",
+        "last_name": "Schwarzenegger",
+        "link": "https://www.facebook.com/arnold.schwarzenegger",
+        "username": "100000000000001",
+        "gender": "male",
+        "locale": "pt_BR"     
+    },
+    
+    "user2": {
+        "id": "100000000000002",
+        "name": "Michelle Fairley",
+        "first_name": "Michelle",
+        "last_name": "Fairley",
+        "link": "https://www.facebook.com/michele.fairley",
+        "username": "100000000000002",
+        "gender": "female",
+        "locale": "pt_BR"     
+    },
+    
+    "user3": {
+        "id": "100000000000003",
+        "name": "Emilia Clarke",
+        "first_name": "Emilia",
+        "last_name": "Clarke",
+        "link": "https://www.facebook.com/emilia.clarke",
+        "username": "100000000000003",
+        "gender": "female",
+        "locale": "pt_BR"     
+    },
+    
+    "user4": {
+        "id": "100000000000004",
+        "name": "Milla Jovovich",
+        "first_name": "Milla",
+        "last_name": "Jovovich",
+        "link": "https://www.facebook.com/milla.jovovich",
+        "username": "100000000000004",
+        "gender": "female",
+        "locale": "pt_BR"
+    },
+    
+    "user5": {
+        "id": "100000000000005",
+        "name": "Tom Hanks",
+        "first_name": "Tom",
+        "last_name": "Hanks",
+        "link": "https://www.facebook.com/tom.hanks",
+        "username": "100000000000005",
+        "gender": "male",
+        "locale": "pt_BR"
+    }
+}
