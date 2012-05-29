@@ -15,7 +15,7 @@ class TestUserAppAuth(unittest.TestCase):
 class TestUserBaseData(unittest.TestCase):
     
     def setUp(self):
-        self.url = '%s/%s' % (listen, settings.GH_USER_URL.replace('(userid)', '100000000000001'))
+        self.url = '%s/100000000000001' % (listen)
         
     
     def test_response_type(self):

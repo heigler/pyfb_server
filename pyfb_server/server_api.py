@@ -7,23 +7,23 @@ import json
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 from pyfb_server import settings
 
-
 class FBHandler(BaseHTTPRequestHandler):
     
     def do_GET(self):
         data_path = os.path.join(settings.BASE_PATH, 'data')
-        user_page_rule = re.compile(r'^/1(\d)+$')
         
-        if re.match(user_page_rule, self.path):
+        # user base info
+        if re.match(settings.GH_USER_URL, self.path):
             user_data_file = os.path.join(data_path, 'users.json')
             with open(user_data_file, 'r') as userfile:
                 user_data = json.loads(userfile.read())
             
-            user_id = re.match(user_page_rule, self.path).group()[1:]
+            user_id = re.match(settings.GH_USER_URL, self.path).group()[1:]
             try:
                 user = user_data['user%s' %user_id[-1]]
             except KeyError:
                 self.send_error(404, 'user does not exist')
+                return False
             
             self.send_response(200)
             self.send_header('Content-type', 'application/json')
